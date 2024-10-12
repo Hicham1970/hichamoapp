@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting React tutos</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+    <!--The quickest way start learning React is to write React directly in your HTML files.
+    Start by including three scripts, the first two let us write React code in our JavaScripts, and the third, Babel, allows us to write JSX syntax and ES6 in older browsers.-->
+    <div id="myDiv"></div>
+
+    <script type="text/babel">
+        function Hello() {
+            return <h1>Hello World This is my first React application! i make a simple change to the html </h1>;
+        }
+
+        const container = document.getElementById('myDiv');
+        const root = ReactDOM.createRoot(container);
+        root.render(<Hello />)
+    </script>
+</body>
+
+</html>

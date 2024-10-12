@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Props</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+
+<body>
+  <p id="root"></p>
+  <p>En React, "props" est l'abréviation de "properties" (propriétés).
+
+    Imaginez un composant React comme une fonction. Les props sont comme les arg
+    que vous passez à cette fonction. Ils permettent de personnaliser le comport
+    l'apparence d'un composant.</p>
+  <script type="text/babel">
+    function Car(props) {
+      return <h2>I am a {props.color} Car!</h2>;
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<Car color="red" />);
+  </script>
+</body>
+
+</html>

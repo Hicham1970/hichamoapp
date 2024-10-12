@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Render Method</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+  <h1>The CreateRoot function</h1>
+  <p>The createRoot() function takes one argument, an HTML element.
+
+    The purpose of the function is to define the HTML element where a React component should be displayed.</p>
+  <h1>The render method</h1>
+  <p>The render() method is then called to define the React component that should be rendered.
+
+    But render where?
+
+    There is another folder in the root directory of your React project, named "public". In this folder, there is an
+    index.html file.
+
+    You'll notice a single
+  <div> in the body of this file. This is where our React application will be rendered.</p>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const container = document.getElementById('root');
+      const root = ReactDOM.createRoot(container);
+      root.render(<p>Hello</p>);
+    </script>
+</body>
+
+</html>

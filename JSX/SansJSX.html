@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What is the JSX?</title>
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+</head>
+
+<body>
+  <h1>What is the JSX</h1>
+  <p>JSX stands for JavaScript XML.
+
+    JSX allows us to write HTML in React.
+
+    JSX makes it easier to write and add HTML in React.</p>
+  <p>JSX is an extension of the JavaScript language based on ES6, and is translated into regular JavaScript at runtime.
+  </p>
+  <p>Sans JSX</p>
+  <div id="root"></div>
+
+
+
+  <script type="text/babel">
+    const myElement = React.createElement('h1', {}, 'I do not use JSX!');
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(myElement);
+
+  </script>
+</body>
+
+</html>

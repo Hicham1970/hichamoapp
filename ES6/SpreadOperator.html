@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spread Operator</title>
+</head>
+
+<body>
+  <p id="demo"></p>
+  <script>
+    const myVehicle = {
+      brand: 'Ford',
+      model: 'Mustang',
+      color: 'red'
+    }
+
+    const updateMyVehicle = {
+      type: 'car',
+      year: 2021,
+      color: 'yellow'
+    }
+
+    const myUpdatedVehicle = { ...myVehicle, ...updateMyVehicle }
+    document.querySelector('#demo').innerText = myUpdatedVehicle
+
+    //Check the result object in the console:
+    console.log(myUpdatedVehicle);
+  </script>
+
+  <p>Press F12 and see the result object in the console view.</p>
+
+
+</body>
+
+</html>
