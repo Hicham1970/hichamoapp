@@ -1,0 +1,16 @@
+body {
+  background-color: #282c34;
+  color: white;
+  padding: 40px;
+  font-family: Sans-Serif;
+  text-align: center;
+}
+h1 {
+  color: red;
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+p {
+  color: green;
+  letter-spacing: 10px;
+}

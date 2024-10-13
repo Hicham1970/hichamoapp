@@ -1,31 +1,29 @@
-import { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom/client";
-import Todos from "./Todos/Todos";
+// import Header3 from "./Styling/StylingScss";
+import FavoriteColor from "./Hooks/favoriteColor";
+import Navbar from "./NavBar/NavBar";
+import "./NavBarStyle.css";
 import "./index.css";
-
-const App = () => {
-  const [count, setCount] = useState(0);
-  // eslint-disable-next-line no-unused-vars
-  const [todos, setTodos] = useState(["todo 1", "todo 2"]);
-
-  const increment = () => {
-    setCount((c) => c + 1);
-  };
-
-  return (
-    <div className="container">
-      <Todos todos={todos} />
-      <hr />
-      <div>
-        Count: {count}
-        <br></br>
-        <button className="btn" onClick={increment}>
-          +
-        </button>
-      </div>
-    </div>
-  );
-};
+import Car from "./Hooks/UseState";
+import Machine from "./Hooks/UpdateState";
+// import "./my-sass.scss";
+// import "./header.css";
+// import Header from "./Styling/InlineStyle"
+// import Header2 from "./Styling/StyleSheet";
+// import Carousel from "./Styling/StylingModule";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+
+root.render(
+  <>
+    {/* <Header /> */}
+    {/* <Header2 /> */}
+    {/* <Carousel /> */}
+    {/* <Header3 /> */}
+    <Navbar />
+    <FavoriteColor />
+    <Car />
+    <Machine />
+  </>
+);

@@ -1,0 +1,17 @@
+body {
+  background-color: lightgray;
+  padding: 20px;
+  font-family: sans-serif;
+  align-items: center;
+}
+
+$myColor: red;
+
+$myParagraphColor: green;
+
+h1 {
+  color: $myColor;
+}
+p {
+  color: $myParagraphColor;
+}
