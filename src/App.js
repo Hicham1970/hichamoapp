@@ -1,15 +1,11 @@
-
-import './App.css';
-import Application from "./Hooks/UseRef"
-import Application2 from "./Hooks/UseRef2"
+import Todos from "./Hooks/UseReduce";
+import "./App.css";
 
 function App() {
   return (
     <>
-    <Application />
-    <Application2 />
+      <Todos />
     </>
-    
   );
 }
 
