@@ -1,10 +1,10 @@
-import Todos from "./Hooks/UseReduce";
-import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import UseReducerArabic from "./Hooks/UseReducerArabic";
 
 function App() {
   return (
     <>
-      <Todos />
+      <UseReducerArabic />
     </>
   );
 }
