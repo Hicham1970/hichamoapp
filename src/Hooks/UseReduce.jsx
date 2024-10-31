@@ -3,13 +3,18 @@ import { useReducer } from "react";
 const initialTodos = [
   {
     id: 1,
-    title: "Todo 1",
+    title: "Faire de la gymnastique",
     complete: false,
   },
   {
     id: 2,
-    title: "Todo 2",
+    title: "Pendre le petit-déjeuner",
     complete: true,
+  },
+  {
+    id: 2,
+    title: "Rendre visite aux parents",
+    complete: false,
   },
 ];
 
@@ -34,19 +39,22 @@ export default function Todos() {
     dispatch({ type: "COMPLETE", id: todo.id });
   };
   return (
-    <>
-      {todos.map((todo) => (
-        <div key={todo.id}>
-          <label>
-            <input
-              type="checkbox"
-              checked={todo.complete}
-              onChange={() => handleComplete(todo)}
-            />
-            {todo.title}
-          </label>
-        </div>
-      ))}
-    </>
+    <div className="container-fluid d-flex justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
+      <div className="row justify-content-center">
+        {todos.map((todo) => (
+          <div key={todo.id}>
+            <label>
+              <input
+                type="checkbox"
+                checked={todo.complete}
+                onChange={() => handleComplete(todo)}
+              />
+              {/* ce qui sera afficher comme titre dans le label */}
+              `la tache: {todo.title}`
+            </label>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }

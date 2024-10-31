@@ -1,12 +1,17 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import UseReducerArabic from "./Hooks/UseReducerArabic";
+// import UseReducerArabic from "./Hooks/UseReducerArabic";
+import ChangeTheme from "./Hooks/UseCallback_theme"
+
+
 
 function App() {
   return (
     <>
-      <UseReducerArabic />
+      <ChangeTheme />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
+
+
