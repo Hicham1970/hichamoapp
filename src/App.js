@@ -1,17 +1,20 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-// import UseReducerArabic from "./Hooks/UseReducerArabic";
-import ChangeTheme from "./Hooks/UseCallback_theme"
+import UseReducerArabic from "./Hooks/UseReducerArabic";
+// import IndexRouter from "./indexRouter";
 
-
-
-function App() {
+export default function App() {
   return (
     <>
-      <ChangeTheme />
+      <UseReducerArabic />
     </>
   )
 }
 
-export default App
+
+
+
+
+
+
 
 
