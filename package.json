@@ -41,10 +41,10 @@
   "devDependencies": {
     "css-loader": "^7.1.2",
     "postcss-loader": "^8.1.1",
-    "react-router-dom": "^6.27.0",
+    "react-router-dom": "^6.28.0",
     "resolve-url-loader": "^5.0.0",
-    "sass": "^1.80.4",
-    "sass-loader": "^16.0.2",
+    "sass": "^1.81.0",
+    "sass-loader": "^16.0.3",
     "style-loader": "^4.0.0"
   }
 }
